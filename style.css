@@ -1,0 +1,300 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 0 0 70px;
+    justify-content: space-around;
+    /* padding: 30px; */
+    display: flex;
+}
+
+nav{
+    width: 50px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+nav .logo {
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+nav .logo img{
+    width: 40px;
+    margin-bottom: 10px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+nav ul li{
+    margin: 10px 0px;
+}
+nav ul li img{
+    width: 20px;
+}
+
+nav ul li.task img{
+border: 1px solid #666;
+border-radius: 4px;
+}
+nav .others{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 50px;
+    left: 50%;
+}
+nav .others .notifications img{
+    width: 25px;
+    margin-top: 90px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+}
+
+nav .others .logout img{
+    width: 25px;
+    margin: 10px 0px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+}
+
+.profile{
+    /* position: absolute;
+    top: 40px;
+    left: 150px; */
+}
+
+.profile div img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profile .profile-info{
+    display: flex;
+}
+.profile .profile-info div{
+    margin-left: 20px;
+}
+.profile .profile-info .name{
+    font-weight: 600;
+
+}
+.profile .profile-info .text{
+    color: #666;
+    font-size: 14px;
+    
+}
+
+.account-info p{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.amt{
+    font-weight: 600;
+}
+
+.amt-type{
+    color: #666;
+}
+
+.account-info button{
+    padding: 8px 15px;
+    background: rgb(103, 33, 233);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.trans-heading{
+    margin: 20px 0;
+}
+
+.transactions div{
+    margin: 20px 0;
+}
+
+.transactions div span{
+    color: #666;
+}
+
+.container{
+    /* position: absolute;
+    top: 40px;
+    left: 55%;
+    transform: translateX(-50%); */
+    padding: 0 30px;
+}
+
+.income div p{
+    font-size: 12px;
+    font-weight: 900;
+    color: rgb(103, 33, 233);
+    margin-bottom: 10px;
+}
+
+.goalandachievements{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.goalandachievements div{
+    margin: 0 10px;
+}
+
+.goalandachievements div span{
+    position: relative;
+    color: #666;
+    padding: 4px 0;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(103, 33, 233);
+}
+
+.Contributions-over-time .heading{
+    margin: 20px 0;
+}
+
+.Contributions-over-time .graph-data{
+    display: flex;
+}
+
+.graph-data > p{
+    margin: 0 5px;
+}
+
+.graph-data  span{
+    font-size: 14px;
+}
+
+.graph-data p.color{
+    width: 20px;
+    height: 10px;
+    border-radius: 10px;
+    background: rgb(0, 143, 251);
+    transform: translatey(50%);
+}
+
+.graph-data p.color.c2{
+    background: rgb(0, 227, 150);
+}
+
+.graph-data p.color.c3{
+    background: rgb(254, 176, 25);
+}
+
+.graph-2 .heading{
+    font-weight: 600;
+}
+
+.graph-2 .text{
+    color: #666;
+}
+
+
+.profile-update{
+    /* position: absolute;
+    top: 40px;
+    right: 50px; */
+}
+
+.profile-update p.heading{
+    margin: 20px 0;
+}
+
+.strategy .data div{
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.strategy button{
+    padding: 8px 25px;
+    transform: translateX(50%);
+    background: rgb(103, 33, 233);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+.strategy .help{
+    color: rgb(103, 33, 233);
+    font-size: 12px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.chart-2-charts{
+    display: flex;
+    font-size: 14px;
+}
+
+.chart-2 .chart-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.chart-2 .chart-info span{
+    font-size: 14px;
+}
+
+.chart-2-charts svg{
+    width: 100px;
+}
+
+.chart-2-charts svg text{
+    font-size: 12px;
+}
+
+.chart-2{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.more{
+    border-left: 1px solid rgb(103, 33, 233);
+    padding-left: 10px;
+}
+
+.more p:nth-child(1){
+    color: #666;
+}
+.more p:nth-child(2){
+    font-size: 14px;
+}
+
+.more p:nth-child(3){
+    color: #999;
+}
+
+.more p:nth-child(4){
+    font-size: 12px;
+    color: rgb(103, 33, 233);
+}
+

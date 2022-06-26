@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>portfolio</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <ul>
+                <li><img src="./images/home.png" alt="home"></li>
+                <li><img src="./images/feed.png" alt=""></li>
+                <li class="task"><img src="./images/tasks.png" alt="tasks"></li>
+                <li><img src="./images/user.png" alt="user"></li>
+            </ul>
+            <div class="others">
+                <div class="notifications">
+                    <img src="./images/notification.png" alt="notification">
+                </div>
+                <div class="logout">
+                    <img src="./images/exit.png" alt="logout">
+                </div>
+            </div>
+        </nav>
+        <div class="profile">
+            <div>
+               <div class="profile-info">
+                <img src="" alt="">
+                <div>
+                    <p class="name">Hi Mike,</p>
+                    <p class="text">Welcome back.</p>
+                </div>
+               </div>
+                <div class="account-info">
+                    <p>
+                        <span class="amt">$19,892</span>
+                        <span class="amt-type">Account Balance</span>
+                    </p>
+                    <p>
+                        <span class="amt">$4,000</span>
+                        <span class="amt-type">Year to date Contribution</span>
+                    </p>
+                    <p>
+                        <span class="amt">$1,892</span>
+                        <span class="amt-type">Total Interest</span>
+                    </p>
+                    <button>I want to <i class="fa-solid fa-angle-down"></i> </button>
+                </div>
+            </div>
+            <div class="transactions">
+                <p class="trans-heading">Recent transactions</p>
+                <div>
+                    <span>2020-08-07</span>
+                    <p>Withdrawal transfer to bank-xxx11</p>
+                </div>
+                <div>
+                    <span>2020-07-21</span>
+                    <p>Withdrawal transfer to bank-xxx11</p>
+                </div>
+                <div>
+                    <span>2020-07-16</span>
+                    <p>Withdrawal transfer to bank-xxx11</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="income">
+                <div>
+                    <p>Retirement Income</p>
+                    <span>Starting Year 2056</span>
+                </div>
+            </div>
+            <div class="goalandachievements">
+                <div>
+                    <p>$300,000</p>
+                    <span>My Goal</span>
+                </div>
+                <div>
+                    <p>59%</p>
+                    <span>Goal Achieved</span>
+                </div>
+                <div>
+                    <p>$300</p>
+                    <span>Est Monthly Income</span>
+                </div>
+            </div>
+            <div class="Contributions-over-time">
+                <p class="heading">Contributions Overtime </p>
+                <div class="graph-data">
+                    <p>
+                        <p class="color c1"></p>
+                        <span class="type">Employer</span>
+                        <span class="data">K 73.500</span>
+                    </p>
+                    <p>
+                        <p class="color c2"></p>
+                        <span class="type">Employee</span>
+                        <span class="data">K 73.500</span>
+                    </p>
+                    <p>
+                        <p class="color c3"></p>
+                        <span class="type">Total Interest</span>
+                        <span class="data">K 73.500</span>
+                    </p>
+                </div>
+                <div id="chart_one_container"></div>
+                <div class="graph-2">
+                    <p class="heading">How do I compare to my peers?</p>
+                    <p class="text">These numbers represent currentgoal achievement</p>
+                </div>
+                <div class="chart-2">
+                    <div class="chart-info">
+                        <span>Age: Under 30</span>
+                        <span>Salary: K 20 . K 30</span>
+                        <span>Gender: Male</span>
+                    </div>
+                    <div class="chart-2-charts">
+                        <div id="first_chart"></div>
+                        <div id="sec_chart"></div>
+                        <div id="third_chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="profile-update">
+            <div class="strategy">
+                <p class="heading">Retirement Strategy</p>
+                <div class="data">
+                    <div>
+                        <p>Employee Contribution</p>
+                        <input type="range" value="60" /><span>12%</span>
+                    </div>
+                    <div>
+                        <p>Retirement Age</p>
+                        <input type="range" value="65" /> <span>65%</span>
+                    </div>
+                    <div>
+                        <span>Employee Contribution</span>
+                        <span>8.4%</span>
+                    </div>
+                    <div>
+                        <span>Interest rate</span>
+                        <span>5%</span>
+                    </div>
+                </div>
+                <button>Update</button>
+                <p class="help">View Help Docs </p>
+                <div class="more">
+                    <p>Are you considering a</p>
+                    <p>Housing Advance?</p>
+                    <p>Limited Time reduced intrest</p>
+                    <p>Learn More ></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./script.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />    -->
+</body>
+</html>
