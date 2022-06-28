@@ -298,3 +298,32 @@ nav .others .logout img{
     color: rgb(103, 33, 233);
 }
 
+@mdia screen and (max-width: 600px){
+main{
+    flex-direction: column;
+}
+.profile {
+padding: 0 20px;
+}
+.goalandachievements{
+    font-size: 12px;
+}
+.graph-data span{
+    font-size: 10px;
+}
+.chart-2{
+    flex-direction: column;
+}
+.chart-2 .chart-info{
+    margin: 20px 0;
+}
+.chart-2 .chart-info span{
+    margin: 6px 0;
+}
+.data input{
+    width: 80%;
+}
+.help, .more{
+    display: none;
+}
+}
